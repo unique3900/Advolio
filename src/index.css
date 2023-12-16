@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&family=Neucha&family=Nunito&family=Open+Sans&family=Raleway:wght@200&family=Roboto+Mono:ital@1&family=Work+Sans:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +8,5 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }

@@ -1,12 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { ThemeContext } from './Context/ContextAPI'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   const { theme, setTheme } = useContext(ThemeContext)
-  console.log(theme)
+
   return (
-    <div>
-      <h1 className="text-2xl text-center">Hey</h1>
+    <div className='bg-white h-screen dark:bg-black '>
+     <Navbar/>
     </div>
   )
 }
