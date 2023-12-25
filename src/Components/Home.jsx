@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Typewriter from "./TypeWriter";
 import { FaGithub,FaInstagram,FaYoutube   } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { motion } from 'framer-motion';
 const Home = () => {
   const [typeText, setTypeText] = useState("Full Stack Web Developer");
   return (
-    <section id="home" className=" w-full  h-screen flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center lg:gap-10 mt-10 lg:-mt-14 px-2 lg:px-[50px] ">
+    <section id="home" className=" w-full  min-h-screen flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center lg:gap-10 mt-10 lg:-mt-14 px-2 lg:px-[50px] ">
       <div className="flex flex-col gap-6 w-full lg:w-2/3">
         <h1 className="font-bold text-[58px] lg:text-9xl text-center lg:text-start leading-[75px] text-black dark:text-white">
           Parashar <span className="text-indigo-600">Neupane</span>
@@ -26,12 +26,14 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-5 ">
           <div className="flex gap-4 justify-center items-center mt-5">
-            <button className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
+            <motion.button initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
+
+              transition={{ type: "spring", stiffness: 100,delay:0.3 }} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
               Get in Touch
-            </button>
-            <button className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
+            </motion.button>
+            <motion.button  initial={{y:200,opacity:0}} animate={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.5}} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
               Hire Me!
-            </button>
+            </motion.button>
           </div>
 
           {/* Socials */}
@@ -47,15 +49,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex mt-10 lg:mt-0   lg:w-1/2 ">
+      <div className="flex mt-10 lg:mt-0   lg:w-1/2 mb-10 ">
         <img
           src="./assets/hero-future.png"
           alt=""
           className="rounded-bl-[200px]  w-[500px]"
         />
+              <img className="absolute z-[-10] right-6 lg:right-0 top-6" src="./assets/hero-line-shape-2.webp" alt="" />
       </div>
-
-      <img className="absolute  right-6 lg:right-0 top-6" src="./assets/hero-line-shape-2.webp" alt="" />
     </section>
   );
 };

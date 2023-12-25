@@ -9,7 +9,7 @@ const Navbar = () => {
     const [navState, setNavState] = useState(false);
     const {handleThemeSwitch} =useContext(ThemeContext)
   return (
-      <div className='w-full flex items-center justify-between px-8 py-2'>
+      <div className='z-[1000]  w-full flex items-center justify-between px-8 py-2'>
           {/* Left */}
           <img src="./assets/logo.png" alt="Parashar Neupane" className='w-48 h-24 object-cover' />
 
@@ -24,7 +24,7 @@ const Navbar = () => {
           
           {/* Desktop */}
           <div className="hidden lg:flex flex-row items-center justify-around gap-8">
-          <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>About Me</Link>
+          <a  href={'#about'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>About Me</a>
                   <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Skills</Link>
                   <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Projects</Link>
                   <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Contact Me</Link>
