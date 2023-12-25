@@ -9,9 +9,9 @@ const Navbar = () => {
     const [navState, setNavState] = useState(false);
     const {handleThemeSwitch} =useContext(ThemeContext)
   return (
-      <div className=' w-full flex items-center justify-between px-8 py-8'>
+      <div className='w-full flex items-center justify-between px-8 py-2'>
           {/* Left */}
-          <p className="cursor-pointer text-black dark:text-white text-3xl font-bold leading-8 ">Parashar <span className="text-indigo-500">Neupane</span></p>
+          <img src="./assets/logo.png" alt="Parashar Neupane" className='w-48 h-24 object-cover' />
 
           {/* Right */}
 
@@ -24,11 +24,11 @@ const Navbar = () => {
           
           {/* Desktop */}
           <div className="hidden lg:flex flex-row items-center justify-around gap-8">
-          <Link to={'/'} className='font-bold text-lg cursor-pointer text-black hover:text-indigo-500'>About Me</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black hover:text-indigo-500'>Skills</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black hover:text-indigo-500'>Projects</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black hover:text-indigo-500'>Contact Me</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black hover:text-indigo-500'>Hire Service</Link>
+          <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>About Me</Link>
+                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Skills</Link>
+                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Projects</Link>
+                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Contact Me</Link>
+                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Hire Service</Link>
           </div>
         
               {/* Active NavState */}
