@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import Typewriter from "./TypeWriter";
-import { FaGithub,FaInstagram,FaYoutube   } from "react-icons/fa";
+import { FaGithub,FaInstagram,FaYoutube,FaLinkedin    } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 import { SiWebmoney } from "react-icons/si";
+import ParticlesBg from 'particles-bg'
 
 const Home = () => {
   const [typeText, setTypeText] = useState("Full Stack Web Developer");
   return (
-    <section id="home" className=" w-full  min-h-screen flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center lg:gap-10 mt-10 lg:-mt-14 px-2 lg:px-[50px] ">
+    <section id="home" className=" w-full  min-h-screen flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center lg:gap-10 mt-10 lg:-mt-14 px-2 lg:px-[50px] overflow-x-hidden ">
+     
       <div className="flex flex-col gap-6 w-full lg:w-2/3">
         <h1 className="font-bold text-[58px] lg:text-9xl text-center lg:text-start leading-[75px] text-black dark:text-white">
           Parashar <span className="text-indigo-600">Neupane</span>
@@ -20,10 +22,7 @@ const Home = () => {
         </span>
 
         <p className="leading-[29px] text-center lg:text-justify text-black dark:text-white">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-          similique, recusandae animi, accusamus nam iste molestias facilis unde
-          esse eum consectetur, aspernatur voluptatum veniam inventore ad
-          eveniet. Laborum, exercitationem dolore.
+        I'm Parashar Neupane, a Kathmandu-based full-stack web developer specializing in MERN stack development. Proficient in MongoDB, Express.js, React, and Node.js, I bring a focused expertise to create robust and scalable web applications. Open to freelance, remote, or onsite opportunities, I'm eager to contribute my MERN stack skills to innovative projects. Let's collaborate and bring your web development ideas to life.
         </p>
 
         <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-5 ">
@@ -43,9 +42,10 @@ const Home = () => {
             <p className="font-bold text-xl lg:text-lg text-black dark:text-white">Follow Me:</p>
 
             <div className="flex items-center gap-5">
-              <Link className="text-black dark:text-white" to={'/'} ><FaGithub size={28}/></Link>
-              <Link  className="text-black dark:text-white" to={'/'} ><FaInstagram size={28}/></Link>
-              <Link className="text-black dark:text-white"  to={'/'} ><FaYoutube size={28}/></Link>
+              <a href="https://github.com/unique3900" target="_blank" className="text-black dark:text-white" to={'/'} ><FaGithub size={28}/></a>
+              <a  href="https://www.linkedin.com/in/parashar-neupane-77942b166/" target="_blank" className="text-black dark:text-white" to={'/'} ><FaLinkedin size={28}/></a>
+              <a href="https://www.instagram.com/__unique.wav/" target="_blank"  className="text-black dark:text-white" to={'/'} ><FaInstagram size={28}/></a>
+              <a href="https://www.youtube.com/@Lakhemusic" target="_blank" className="text-black dark:text-white"  to={'/'} ><FaYoutube size={28}/></a>
             </div>
           </div>
         </div>
