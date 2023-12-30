@@ -3,6 +3,8 @@ import Typewriter from "./TypeWriter";
 import { FaGithub,FaInstagram,FaYoutube   } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
+import { SiWebmoney } from "react-icons/si";
+
 const Home = () => {
   const [typeText, setTypeText] = useState("Full Stack Web Developer");
   return (
@@ -49,13 +51,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex mt-10 lg:mt-0   lg:w-1/2 mb-10 ">
+      <div className="relative flex mt-10 lg:mt-0    lg:w-1/2 mb-10 ">
         <img
-          src="./assets/hero-future.png"
+          src="./assets/hero-bg-future.jpg"
           alt=""
-          className="rounded-bl-[200px]  w-[500px]"
+          className="rounded-bl-[200px] shadow-2xl  w-[500px] h-[500px] object-cover"
         />
-              <img className="absolute z-[-10] right-6 lg:right-0 top-6" src="./assets/hero-line-shape-2.webp" alt="" />
+        <img className="absolute z-[-10] right-0 lg:right-0 top-6" src="./assets/hero-line-shape-2.webp" alt="" />
+        
+        
       </div>
     </section>
   );

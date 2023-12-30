@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar'
 import {Routes,Route} from 'react-router-dom'
 import Home from './Components/Home'
 import AboutMe from './Components/AboutMe'
+import Skills from './Components/Skills'
 
 const App = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -16,7 +17,8 @@ const App = () => {
 
 
       <Home/>
-      <AboutMe/>
+      <AboutMe />
+      <Skills/>
       
     </main>
   )

@@ -19,7 +19,7 @@ export function ActivitiesTimeline() {
     <div  className="lg:w-[55rem]">
       <Timeline>
         <motion.div
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 400 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{once:true}}
           transition={{ duration: 0.4 }}
@@ -54,7 +54,7 @@ export function ActivitiesTimeline() {
         </motion.div>
 
         <motion.div
-           initial={{ opacity: 0, x: 1000 }}
+           initial={{ opacity: 0, x: 400 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{once:true}}
            transition={{ duration: 0.6 }}
@@ -89,7 +89,7 @@ export function ActivitiesTimeline() {
         </motion.div>
 
         <motion.div
-                     initial={{ opacity: 0, x: 1000 }}
+                     initial={{ opacity: 0, x: 400 }}
           whileInView={{ opacity: 1, x: 0 }}
                   viewport={{once:true}}
                      transition={{ duration: 0.8 }}
@@ -131,7 +131,7 @@ export function ActivitiesTimeline() {
         </motion.div>
 
         <motion.div
-                     initial={{ opacity: 0, x: 1000 }}
+                     initial={{ opacity: 0, x: 400 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{once:true}}
                      transition={{ duration: 1}}
