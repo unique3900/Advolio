@@ -4,6 +4,7 @@ import { IoMdClose } from "react-icons/io";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../Context/ContextAPI';
+import { FiDownload } from "react-icons/fi";
 
 const Navbar = () => {
     const [navState, setNavState] = useState(false);
@@ -27,9 +28,9 @@ const Navbar = () => {
           <div className="hidden lg:flex flex-row items-center justify-around gap-8">
           <a  href={'#about'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>About Me</a>
                   <a href={'#skills'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Skills</a>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Projects</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Contact Me</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Hire Service</Link>
+                  <a href={'#projects'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Projects</a>
+                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500'>Hire Me</Link>
+
           </div>
         
               {/* Active NavState */}
@@ -39,9 +40,8 @@ const Navbar = () => {
                 <IoMdClose  size={28} className='absolute top-8 right-5 text-white border-2 rounded-full cursor-pointer' onClick={()=> setNavState(!navState)}/>
                   <a href={'#about'} onClick={()=>setNavState(false)} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>About Me</a>
                   <a href={'#skills'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Skills</a>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Projects</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Contact Me</Link>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Hire Service</Link>
+                  <a href={'#projects'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Projects</a>
+                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Hire Me</Link>
               </div>
               )}
               

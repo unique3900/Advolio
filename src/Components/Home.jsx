@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Typewriter from "./TypeWriter";
-import { FaGithub,FaInstagram,FaYoutube,FaLinkedin    } from "react-icons/fa";
+import { FaGithub,FaInstagram,FaYoutube,FaLinkedin     } from "react-icons/fa";
+import {FiDownload} from "react-icons/fi"
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 import { SiWebmoney } from "react-icons/si";
@@ -26,11 +27,11 @@ const Home = () => {
         </p>
 
         <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-5 ">
-          <div className="flex gap-4 justify-center items-center mt-5">
-            <motion.button initial={{y:40}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.2}} viewport={{once:true}} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
-              Get in Touch
+          <div className="flex gap-4 justify-center  items-center mt-5">
+            <motion.button initial={{y:40}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.2}} viewport={{once:true}} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44 flex gap-2 justify-center items-center  hover:bg-indigo-700">
+               Resume <FiDownload size={18} />
             </motion.button>
-            <motion.button  initial={{y:45}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.3}} viewport={{once:true}}className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
+            <motion.button  initial={{y:45}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.3}} viewport={{once:true}}className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44 hover:bg-indigo-700">
               Hire Me!
             </motion.button>
           </div>
