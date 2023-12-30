@@ -27,12 +27,10 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-5 ">
           <div className="flex gap-4 justify-center items-center mt-5">
-            <motion.button initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
-
-              transition={{ type: "spring", stiffness: 100,delay:0.3 }} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
+            <motion.button initial={{y:40}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.2}} viewport={{once:true}} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
               Get in Touch
             </motion.button>
-            <motion.button  initial={{y:200,opacity:0}} animate={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.5}} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
+            <motion.button  initial={{y:45}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.3}} viewport={{once:true}}className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44">
               Hire Me!
             </motion.button>
           </div>
@@ -54,10 +52,10 @@ const Home = () => {
       <div className="relative flex mt-10 lg:mt-0    lg:w-1/2 mb-10 ">
         <img
           src="./assets/hero-bg-future.jpg"
-          alt=""
+          alt="Parashar Neupane"
           className="rounded-bl-[200px] shadow-2xl  w-[500px] h-[500px] object-cover"
         />
-        <img className="absolute z-[-10] right-0 lg:right-0 top-6" src="./assets/hero-line-shape-2.webp" alt="" />
+        <img className="absolute z-[-10] right-0 lg:-right-14 w-[100vw] top-6" src="./assets/hero-line-shape-2.webp" alt="Hero Lines" />
         
         
       </div>
