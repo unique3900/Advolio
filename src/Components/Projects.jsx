@@ -31,7 +31,7 @@ const Projects = () => {
     ];
     
   return (
-    <section className="w-full bg-gradient-to-br from-indigo-600 to-black/80  min-h-screen flex flex-col  items-center gap-5  mt-14">
+    <section className="w-full bg-gradient-to-br from-indigo-600 to-black/80 dark:bg-black dark:from-black  min-h-screen flex flex-col  items-center gap-5  mt-14">
       <h2 id='projects' className='font-bold text-center text-6xl text-white py-8'>Projects</h2>
      
       <Swiper
@@ -39,6 +39,7 @@ const Projects = () => {
                   dynamicBullets: true,
             
               }}
+              loop={true}
               
         modules={[Pagination]}
         className="w-11/12  bg-white"
@@ -48,7 +49,7 @@ const Projects = () => {
                       <SwiperSlide key={index}><div className='flex flex-col gap-4 items-stretch justify-center w-full pb-5'>
                           <img src={item.url} alt={item.title} />
                           <h3 className="font-bold text-center text-4xl cursor-pointer hover:text-indigo-600"><a href={item.git } target='_blank'>{item.title}</a> </h3>
-                          <p className="px-5 text-lg text-center">{item.desc }</p>
+                          <p className="leading-[29px] text-center  text-black  px-5">{item.desc }</p>
                       </div> </SwiperSlide>
                   ))
               }
