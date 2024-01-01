@@ -61,12 +61,13 @@ const Skills = () => {
     
     ]
   return (
-    <section  className="snap-start relative w-full  min-h-screen flex flex-col  items-center gap-5  mt-14">
+    <section  className="snap-start relative w-full overflow-x-hidden  min-h-screen flex flex-col  items-center gap-5  mt-14">
           <ParticlesBg color={theme!="light"?"#ffff":""} type="cobweb" bg={{
              position: "absolute",
              zIndex: -1,
               width: "100%",
-             opacity:"0.2"
+              opacity: "0.2",
+             
         }}  num={200}  />
       <h2 id='skills' className='font-bold text-center text-6xl text-black dark:text-white'>Skills</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 items-center gap-20 ">

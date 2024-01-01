@@ -11,3 +11,7 @@
   font-family: 'Inter', sans-serif;
 
 }
+body{
+  width: 100%;
+  overflow-x: hidden;
+}

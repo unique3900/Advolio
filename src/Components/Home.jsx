@@ -22,7 +22,7 @@ const Home = () => {
           <Typewriter text={"Full Stack Web Developer"} delay={50} />
         </span>
 
-        <p className="leading-[29px] text-center lg:text-justify text-black dark:text-white">
+        <p className="leading-[29px]  lg:text-justify text-black dark:text-white">
         I'm Parashar Neupane, a Kathmandu-based full-stack web developer specializing in MERN stack development. Proficient in MongoDB, Express.js, React, and Node.js, I bring a focused expertise to create robust and scalable web applications. Open to freelance, remote, or onsite opportunities, I'm eager to contribute my MERN stack skills to innovative projects. Let's collaborate and bring your web development ideas to life.
         </p>
 
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="relative flex mt-10 lg:mt-0    lg:w-1/2 mb-10 ">
+      <div className="relative flex w-fit mt-10 lg:mt-0 lg:w-1/2 mb-10 ">
         <img
           src="./assets/hero-bg-future.jpg"
           alt="Parashar Neupane"

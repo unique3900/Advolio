@@ -8,7 +8,7 @@ import { FiDownload } from "react-icons/fi";
 
 const Navbar = () => {
     const [navState, setNavState] = useState(false);
-  const { handleThemeSwitch } = useContext(ThemeContext);
+  const { handleThemeSwitch,theme } = useContext(ThemeContext);
   const [prevScroll, setPrevScroll] = useState(0)
   const [visible, setVisible] = useState(true)
 
@@ -26,11 +26,14 @@ const Navbar = () => {
   return (
     <div className={`z-[999]  w-full flex items-center justify-between px-8 py-2 ${visible ? '': ' sticky top-0 bg-indigo-700'}`}>
       {/* Left */}
-      {visible ? (
+      {/* {visible  ? (
          <a href="#home"> <img src="./assets/logo.png" alt="Parashar Neupane" className='w-48 h-24 object-cover' /></a>
       ) : (
         <a href="#home"> <img src="./assets/logo-white.png" alt="Parashar Neupane" className='w-48 h-24 object-cover' /></a>
-      )}
+      )} */}
+    <a href="#home"> <img src={`./assets/${visible && theme=='light'?'logo.png':'logo-white.png'}`} alt="Parashar Neupane" className={`w-48 h-24 object-cover `} /></a>
+      
+
      
          
 
