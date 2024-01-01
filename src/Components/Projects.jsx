@@ -31,7 +31,7 @@ const Projects = () => {
     ];
     
   return (
-    <section className="w-full bg-gradient-to-br from-indigo-600 to-black/80 dark:bg-black dark:from-black  min-h-screen flex flex-col  items-center gap-5  mt-14">
+    <section className="snap-start w-full bg-gradient-to-br from-indigo-600 to-black/80 dark:bg-black dark:from-black  min-h-screen flex flex-col  items-center gap-5  mt-14">
       <h2 id='projects' className='font-bold text-center text-6xl text-white py-8'>Projects</h2>
      
       <Swiper

@@ -10,7 +10,7 @@ import ParticlesBg from 'particles-bg'
 const Home = () => {
   const [typeText, setTypeText] = useState("Full Stack Web Developer");
   return (
-    <section id="home" className=" w-full  min-h-screen flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center lg:gap-10 mt-10 lg:-mt-14 px-2 lg:px-[50px] overflow-x-hidden ">
+    <section id="home" className="snap-start w-full  min-h-screen flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center lg:gap-10 mt-10 lg:-mt-14 px-2 lg:px-[50px] overflow-x-hidden ">
      
       <div className="flex flex-col gap-6 w-full lg:w-2/3">
         <h1 className="font-bold text-[58px] lg:text-9xl text-center lg:text-start leading-[75px] text-black dark:text-white">
@@ -31,9 +31,9 @@ const Home = () => {
             <motion.button initial={{y:40}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.2}} viewport={{once:true}} className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44 flex gap-2 justify-center items-center  hover:bg-indigo-700">
                Resume <FiDownload size={18} />
             </motion.button>
-            <motion.button  initial={{y:45}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.3}} viewport={{once:true}}className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md w-44 hover:bg-indigo-700">
+            <motion.a href="#hire"  initial={{y:45}} whileInView={{y:0,opacity:1}} transition={{ type: "spring", stiffness: 100 , delay:0.3}} viewport={{once:true}}className="px-3 py-3 bg-indigo-600 cursor-pointer text-white rounded-md text-center w-44 hover:bg-indigo-700">
               Hire Me!
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Socials */}

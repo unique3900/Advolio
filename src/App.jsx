@@ -7,6 +7,7 @@ import Home from './Components/Home'
 import AboutMe from './Components/AboutMe'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
+import Hire from './Components/Hire'
 
 const App = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -14,13 +15,11 @@ const App = () => {
   return (
     <main className='relative min-h-screen dark:bg-black  scroll-smooth'>
       <Navbar />
-      
-
-
       <Home/>
       <AboutMe />
       <Skills />
-      <Projects/>
+      <Projects />
+      <Hire/>
       
     </main>
   )

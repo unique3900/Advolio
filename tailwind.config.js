@@ -9,7 +9,17 @@ module.exports = withMT({
   ],
   darkMode:"class",
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'trans-bounce': {
+          '0%,100%': { transform: 'translateY(10px)' },
+          '50%': {transform:'translateY(0)'}
+        }
+      },
+      animation: {
+        'trans-bounce': 'trans-bounce 1.5s ease-in-out infinite'
+      }
+    },
   },
   plugins: [],
 });

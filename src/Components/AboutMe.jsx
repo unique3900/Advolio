@@ -11,7 +11,7 @@ import { ActivitiesTimeline } from './AboutTimeline';
   
 const AboutMe = () => {
   return (
-    <section  className=" w-full overflow-x-hidden min-h-screen flex flex-col  items-center gap-5  mt-14">
+    <section  className="snap-start w-full overflow-x-hidden min-h-screen flex flex-col  items-center gap-5  mt-14">
       <h2 id='about' className='font-bold text-center text-6xl text-black dark:text-white'>About Me</h2>
 
           <div className="w-3/4 flex justify-center">

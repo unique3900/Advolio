@@ -61,7 +61,7 @@ const Skills = () => {
     
     ]
   return (
-    <section  className="relative w-full  min-h-screen flex flex-col  items-center gap-5  mt-14">
+    <section  className="snap-start relative w-full  min-h-screen flex flex-col  items-center gap-5  mt-14">
           <ParticlesBg color={theme!="light"?"#ffff":""} type="cobweb" bg={{
              position: "absolute",
              zIndex: -1,

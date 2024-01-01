@@ -26,7 +26,12 @@ const Navbar = () => {
   return (
     <div className={`z-[999]  w-full flex items-center justify-between px-8 py-2 ${visible ? '': ' sticky top-0 bg-indigo-700'}`}>
       {/* Left */}
-      <Link to="/"> <img src="./assets/logo.png" alt="Parashar Neupane" className='w-48 h-24 object-cover' /></Link>
+      {visible ? (
+         <a href="#home"> <img src="./assets/logo.png" alt="Parashar Neupane" className='w-48 h-24 object-cover' /></a>
+      ) : (
+        <a href="#home"> <img src="./assets/logo-white.png" alt="Parashar Neupane" className='w-48 h-24 object-cover' /></a>
+      )}
+     
          
 
           {/* Right */}
@@ -43,7 +48,7 @@ const Navbar = () => {
           <a  href={'#about'} className={`font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500 ${visible?'text-black':'text-white'}`}>About Me</a>
           <a href={'#skills'} className={`font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500 ${visible?'text-black':'text-white'}`}>Skills</a>
            <a href={'#projects'} className={`font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500 ${visible?'text-black':'text-white'}`}>Projects</a>
-            <Link to={'/'} className={`font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500 ${visible?'text-black':'text-white'}`}>Hire Me</Link>
+            <a href={'#hire'} className={`font-bold text-lg cursor-pointer text-black dark:text-white dark:hover:text-indigo-500 hover:text-indigo-500 ${visible?'text-black':'text-white'}`}>Hire Me</a>
 
           </div>
         
@@ -55,12 +60,12 @@ const Navbar = () => {
                   <a href={'#about'} onClick={()=>setNavState(false)} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>About Me</a>
                   <a href={'#skills'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Skills</a>
                   <a href={'#projects'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Projects</a>
-                  <Link to={'/'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Hire Me</Link>
+                  <a href={'#hire'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Hire Me</a>
               </div>
               )}
               
               {/* Dark Mode */}
-              <HiOutlineLightBulb onClick={handleThemeSwitch} size={28} className={`text-black fill-white dark:text-white cursor-pointer ${visible?'text-black':'text-white fill-none dark:fill-white'}`} />
+              <HiOutlineLightBulb onClick={handleThemeSwitch} size={28} className={`text-black fill-white dark:text-white cursor-pointer ${visible?'text-black':'text-white fill-transparent dark:fill-white'}`} />
 
 
           </div>
