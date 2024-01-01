@@ -38,7 +38,7 @@ const Hire = () => {
   }
   
   useEffect(() => {
-    console.log(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID,import.meta.env.VITE_PUBLIC_KEY)
+    console.log(process.env.VITE_SERVICE_ID,process.env.VITE_TEMPLATE_ID,process.env.VITE_PUBLIC_KEY)
   }, [])
   
   return (
