@@ -36,11 +36,7 @@ const Hire = () => {
       
       }
   }
-  
-  useEffect(() => {
-    console.log(process.env.VITE_SERVICE_ID,process.env.VITE_TEMPLATE_ID,process.env.VITE_PUBLIC_KEY)
-  }, [])
-  
+
   return (
     <section className="snap-start relative w-full  min-h-screen flex flex-col  items-center gap-5  mt-14">
           <h2 id='hire' 
