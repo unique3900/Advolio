@@ -19,10 +19,10 @@ export function ActivitiesTimeline() {
     <div  className="lg:w-[55rem]">
       <Timeline>
         <motion.div
-          initial={{ opacity: 0, x: 80 }}
+          initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{once:true}}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.2 }}
         >
           <TimelineItem className="h-40">
             <TimelineConnector className="!w-[78px]" />
@@ -54,10 +54,10 @@ export function ActivitiesTimeline() {
         </motion.div>
 
         <motion.div
-           initial={{ opacity: 0, x:60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{once:true}}
-           transition={{ duration: 0.6 }}
+           initial={{ opacity: 0, x: 30 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           viewport={{once:true}}
+           transition={{ duration: 0.3 }}
         >
           <TimelineItem className="h-40">
             <TimelineConnector className="!w-[78px]" />
@@ -89,10 +89,10 @@ export function ActivitiesTimeline() {
         </motion.div>
 
         <motion.div
-                     initial={{ opacity: 0, x: 40 }}
+                     initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
                   viewport={{once:true}}
-                     transition={{ duration: 0.8 }}
+                     transition={{ duration: 0.4 }}
         >
           <TimelineItem className="h-44">
             <TimelineConnector className="!w-[78px]" />
@@ -131,10 +131,10 @@ export function ActivitiesTimeline() {
         </motion.div>
 
         <motion.div
-                     initial={{ opacity: 0, x: 30 }}
+                     initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{once:true}}
-                     transition={{ duration: 0.8}}
+                     transition={{ duration: 0.4}}
         >
           <TimelineItem className="h-44 ">
             <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">

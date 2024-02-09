@@ -73,7 +73,7 @@ const Skills = () => {
           <div className="grid grid-cols-2 lg:grid-cols-3 items-center gap-20 ">
               {
                   skills.map((item, index) => (
-                      <motion.div initial={{y:index*10,opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:index *0.1}} className="flex flex-col gap-4 shadow-md justify-center items-center bg-transparent dark:bg-white py-[120px] rounded-md  px-6 w-48 h-48  duration-75" key={item.id}>
+                      <motion.div initial={{y:index*5,opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:true}} transition={{delay:index *0.08}} className="flex flex-col gap-4 shadow-md justify-center items-center bg-transparent dark:bg-white py-[120px] rounded-md  px-6 w-48 h-48  duration-75" key={item.id}>
                           <img src={item.img} alt={item.title} className='' />
                           <p className="font-bold text-lg leading-6 text-center h-full">{item.title }</p>
                       </motion.div>
