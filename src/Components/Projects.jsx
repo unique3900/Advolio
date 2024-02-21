@@ -12,7 +12,7 @@ import { Pagination } from 'swiper/modules';
 const Projects = () => {
     const ProjectData = [
         {
-            id: 1, title: "Ecommerce Application", url: "./projects/ecommerce-app.png", desc: "Built using MERN stack technology, Use of Redux for state management, Redux thunk for handling asynchronus actions, Passport JS for handling authentication. Admin panel is made so that seller can easily perform operations whereas users enjoy the user-friendly UI. ", git: "https://github.com/unique3900/ParasharShop"
+            id: 1, title: "Ecommerce Application", url: "./projects/homepagefull.png", desc: "Built using MERN stack technology, Use of Redux for state management, Redux thunk for handling asynchronus actions, Passport JS for handling authentication. Admin panel is made so that seller can easily perform operations whereas users enjoy the user-friendly UI. ", git: "https://github.com/unique3900/ParasharShop"
         },
         {
             id: 2, title: "Hotel Booking System", url: "./projects/hotel-booking-system.png", desc: "A full stack web application built on MERN stack technologies, is a site which provides a platform for performing hotel booking operations. Use of JWT for authorization makes the system more secure.", git: "https://github.com/unique3900/Hotel-Booking-System"
@@ -47,7 +47,7 @@ const Projects = () => {
               {
                   ProjectData.map((item, index) => (
                       <SwiperSlide key={index}><div className='flex flex-col gap-4 items-stretch justify-center w-full pb-5'>
-                          <img src={item.url} alt={item.title} />
+                          <img src={item.url} alt={item.title} className='max-h-[50rem] object-contain' />
                           <h3 className="font-bold text-center text-4xl cursor-pointer hover:text-indigo-600"><a href={item.git } target='_blank'>{item.title}</a> </h3>
                           <p className="leading-[29px] text-center  text-black  px-5">{item.desc }</p>
                       </div> </SwiperSlide>
