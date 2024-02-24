@@ -42,7 +42,7 @@ const Home = () => {
 
             <div className="flex items-center gap-5">
               <a href="https://github.com/unique3900" target="_blank" className="text-black dark:text-white" to={'/'} ><FaGithub size={28}/></a>
-              <a  href="https://www.linkedin.com/in/parashar-neupane-77942b166/" target="_blank" className="text-black dark:text-white" to={'/'} ><FaLinkedin size={28}/></a>
+              <a  href="https://www.linkedin.com/in/parasharneupane/" target="_blank" className="text-black dark:text-white" to={'/'} ><FaLinkedin size={28}/></a>
               <a href="https://www.instagram.com/__unique.wav/" target="_blank"  className="text-black dark:text-white" to={'/'} ><FaInstagram size={28}/></a>
               <a href="https://www.youtube.com/@Lakhemusic" target="_blank" className="text-black dark:text-white"  to={'/'} ><FaYoutube size={28}/></a>
             </div>
