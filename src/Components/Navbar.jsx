@@ -61,14 +61,14 @@ const Navbar = () => {
               <div className=" absolute h-screen w-full top-0 left-0 z-50 bg-black/90 flex lg:hidden flex-col gap-4 justify-center items-center">
                 <IoMdClose  size={28} className='absolute top-8 right-5 text-white border-2 rounded-full cursor-pointer' onClick={()=> setNavState(!navState)}/>
                   <a href={'#about'} onClick={()=>setNavState(false)} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>About Me</a>
-                  <a href={'#skills'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Skills</a>
-                  <a href={'#projects'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Projects</a>
-                  <a href={'#hire'} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Hire Me</a>
+                  <a href={'#skills'} onClick={()=>setNavState(false)} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Skills</a>
+                  <a href={'#projects'} onClick={()=>setNavState(false)} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Projects</a>
+                  <a href={'#hire'} onClick={()=>setNavState(false)} className='font-bold text-lg cursor-pointer text-white hover:text-indigo-500'>Hire Me</a>
               </div>
               )}
               
               {/* Dark Mode */}
-              <HiOutlineLightBulb onClick={handleThemeSwitch} size={28} className={`text-black fill-white dark:text-white cursor-pointer ${visible?'text-black':'text-white fill-transparent dark:fill-white'}`} />
+              <HiOutlineLightBulb onClick={handleThemeSwitch} size={28} className={`${!visible ? 'text-white fill-transparent dark:fill-white cursor-pointer':'text-black fill-white dark:text-white cursor-pointer '} `} />
 
 
           </div>
