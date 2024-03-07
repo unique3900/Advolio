@@ -12,19 +12,23 @@ import { Pagination } from 'swiper/modules';
 const Projects = () => {
     const ProjectData = [
         {
-            id: 1, title: "Ecommerce Application", url: "./projects/homepagefull.png", desc: "Built using MERN stack technology, Use of Redux for state management, Redux thunk for handling asynchronus actions, Passport JS for handling authentication. Admin panel is made so that seller can easily perform operations whereas users enjoy the user-friendly UI. ", git: "https://github.com/unique3900/ParasharShop"
+            id: 1, title: "Business Website", url: "./projects/business-website.png", desc: "Developed on Next JS, is a website which businesses can use to showcase their operations, projects, hiring etc. Tailwind is used for designing (Still under Development) ", git: "https://github.com/unique3900/AkTechno"
         },
         {
-            id: 2, title: "Hotel Booking System", url: "./projects/hotel-booking-system.png", desc: "A full stack web application built on MERN stack technologies, is a site which provides a platform for performing hotel booking operations. Use of JWT for authorization makes the system more secure.", git: "https://github.com/unique3900/Hotel-Booking-System"
+            id: 2, title: "Ecommerce Application", url: "./projects/homepagefull.png", desc: "Built using MERN stack technology, Use of Redux for state management, Redux thunk for handling asynchronus actions, Passport JS for handling authentication. Admin panel is made so that seller can easily perform operations whereas users enjoy the user-friendly UI. ", git: "https://github.com/unique3900/ParasharShop"
+        },
+
+        {
+            id: 3, title: "Hotel Booking System", url: "./projects/hotel-booking-system.png", desc: "A full stack web application built on MERN stack technologies, is a site which provides a platform for performing hotel booking operations. Use of JWT for authorization makes the system more secure.", git: "https://github.com/unique3900/Hotel-Booking-System"
         },
         {
-            id: 3, title: "ChillFlix", url: "./projects/chillflix-movie.png", desc: "A simple and fun web application project built using React JS, Tailwind CSS and Firebase for user authentication/authorization. Lets user to view the trending or popular or latest movies and create a watchlist for later.", git: "https://github.com/unique3900/ChillFlix"
+            id: 4, title: "ChillFlix", url: "./projects/chillflix-movie.png", desc: "A simple and fun web application project built using React JS, Tailwind CSS and Firebase for user authentication/authorization. Lets user to view the trending or popular or latest movies and create a watchlist for later.", git: "https://github.com/unique3900/ChillFlix"
         },
         {
-            id: 4, title: "Pharmacy Management System", url:"./projects/pharmacy-management-system.png", desc: "Front-end of this application is built on HTML, CSS, JS, JQuery and Bootstrap and PHP is used as the backend language. MYSQL Database is used to store the data. This web application provides a single plaform for managing a pharmacy shop. User management, Inventory management, Sales management, Leave Request Handling are provided. Solid platform for automating the pharmacy shop.", git: "https://github.com/unique3900/Pharmacy-Management-System"
+            id: 5, title: "Pharmacy Management System", url:"./projects/pharmacy-management-system.png", desc: "Front-end of this application is built on HTML, CSS, JS, JQuery and Bootstrap and PHP is used as the backend language. MYSQL Database is used to store the data. This web application provides a single plaform for managing a pharmacy shop. User management, Inventory management, Sales management, Leave Request Handling are provided. Solid platform for automating the pharmacy shop.", git: "https://github.com/unique3900/Pharmacy-Management-System"
         },
         {
-            id: 5, title: "Blog Management System", url: "./projects/blog-management-system.png", desc: "A basic web application that works a blogging system. React JS and Tailwind CSS is used for the front-end development and Node JS, Express JS is used along with JWT in the backend. MYSQL Database is used to store the data. Lets the author to post the blog with proper formatting and styling.", git: "https://github.com/unique3900/Full-Stack-Blog-System-React-Node-js-Express-js-and-MYSQL"
+            id: 6, title: "Blog Management System", url: "./projects/blog-management-system.png", desc: "A basic web application that works a blogging system. React JS and Tailwind CSS is used for the front-end development and Node JS, Express JS is used along with JWT in the backend. MYSQL Database is used to store the data. Lets the author to post the blog with proper formatting and styling.", git: "https://github.com/unique3900/Full-Stack-Blog-System-React-Node-js-Express-js-and-MYSQL"
         },
        
  
